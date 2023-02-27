@@ -1,22 +1,23 @@
+//Success Stories from Students 
 export class story {
-  name: string;
-  description: string;
+  name: { firstname?: string, lastname: string };
+  story: string;
+  photo: string;
   image: string;
-  price: number;
-  available: boolean;
+  visible: boolean;
   count: number;
 
 
-  constructor(name: string, description: string, image: string, price: number, available: boolean, count: number) { // 
+  constructor(name: { firstname?: string, lastname: string }, story: string, photo: string, image: string, visible: boolean, count: number) { // 
     this.name = name;
-    this.description = description;
-    this.image = "../../assets/images/" + image; // 
-    this.price = price;
-    this.available = available;
+    this.story = story;
+    this.photo = "./assets/pics/students/" + photo; // 
+    this.image = "./assets/pics/stories/" + image;
+    this.visible = visible;
     this.count = count;
   }
 }
 
 export let storries = [
-  new story("dummy", "dummy", "dummy.jpg", 0, true, 0),
+  new story({ firstname: "Thomas", lastname: "Netusil" }, "After my fist Job Interview and my Letter of recomendation from CodeFactory I got the Job as a Senior FullStack WebDeveloper", "Snoopy_Peanuts.png", "thomasN.jpg", true, 0),
 ];
