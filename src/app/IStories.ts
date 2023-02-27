@@ -1,8 +1,8 @@
 export interface IStory {
-  name: string;
-  description: string;
+  name: { firstname?: string, lastname: string };
+  story: string;
+  photo: string;
   image: string;
-  price: number;
-  available: boolean;
+  visible: boolean;
   count: number;
 }
