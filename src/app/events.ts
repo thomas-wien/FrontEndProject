@@ -19,5 +19,5 @@ export class event {
 }
 
 export let events = [
-  new event("dummy", "dummy", "dummy.jpg", 0, true, 0),
+  // new event("dummy", "dummy", "dummy.jpg", 0, true, 0),
 ];
