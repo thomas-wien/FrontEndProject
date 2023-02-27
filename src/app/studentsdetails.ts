@@ -23,7 +23,7 @@ export class student {
     this.languageSkills = languageSkills,
       this.computerSkills = computerSkills,
       this.description = description;
-    this.photo = "./assets/pics/" + photo; // 
+    this.photo = "./assets/pics/students/" + photo; // 
     this.available = available;
     this.count = count;
   }
