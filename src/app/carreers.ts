@@ -1,22 +1,55 @@
 export class carrer {
-  name: string;
-  description: string;
-  image: string;
-  price: number;
-  available: boolean;
-  count: number;
+  carreerTitle: string;
+  carreerType: string; // article, jobOffer, course //
+  carreerImage: string;
+  carreerContent: string;
+  carreerInfo: string;
+  carreerActive: boolean;
 
-
-  constructor(name: string, description: string, image: string, price: number, available: boolean, count: number) { // 
-    this.name = name;
-    this.description = description;
-    this.image = "../../assets/images/" + image; // 
-    this.price = price;
-    this.available = available;
-    this.count = count;
+  constructor(title: string, type: string, image: string, content: string, info: string, active: boolean) { // 
+    this.carreerTitle = title;
+    this.carreerType = type;
+    this.carreerImage = "../../assets/images/carreer/" + image; // 
+    this.carreerContent = content;
+    this.carreerInfo = info;
+    this.carreerActive = active;
   }
 }
 
 export let carrers = [
-  new carrer("dummy", "dummy", "dummy.jpg", 0, true, 0),
+  new carrer(
+    "Title", 
+    "Type", 
+    "Image", 
+    "Content", 
+    "Info", 
+    true),
+  new carrer(
+    "Title", 
+    "Type", 
+    "Image", 
+    "Content", 
+    "Info", 
+    true),
+  new carrer(
+    "Title", 
+    "Type", 
+    "Image", 
+    "Content", 
+    "Info", 
+    true),
+  new carrer(
+    "Title", 
+    "Type", 
+    "Image", 
+    "Content", 
+    "Info", 
+    true),
+  new carrer(
+    "Title", 
+    "Type", 
+    "Image", 
+    "Content", 
+    "Info", 
+    true),
 ];
