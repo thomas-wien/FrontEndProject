@@ -6,10 +6,10 @@ $h1-color: #ffffff;
 $text-color: #363537;
 
 nav {
-    background-color: $nav-bg-color;
-    color: $nav-text-color;
-  
-    a:hover {
-      color: $nav-text-hover-color;
-    }
+  background-color: $nav-bg-color !important;
+  color: $nav-text-color !important;
+
+  a:hover {
+    color: $nav-text-hover-color !important;
   }
+}

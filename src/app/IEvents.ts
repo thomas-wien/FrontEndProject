@@ -1,8 +1,9 @@
 export interface IEvent {
   name: string;
+  dateTime: Date;
   description: string;
   image: string;
   price: number;
-  available: boolean;
+  visible: boolean;
   count: number;
 }

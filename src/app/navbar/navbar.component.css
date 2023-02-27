@@ -1,7 +1,7 @@
 nav {
-  background-color: #ffffff;
-  color: #821918;
+  background-color: #ffffff !important;
+  color: #821918 !important;
 }
 nav a:hover {
-  color: #8b8b8b;
+  color: #8b8b8b !important;
 }/*# sourceMappingURL=navbar.component.css.map */
