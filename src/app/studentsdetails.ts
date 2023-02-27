@@ -10,11 +10,11 @@ export class student {
   languageSkills: string;
   computerSkills: string;
   photo: string;
-  visible: boolean;
+  available: boolean;
   count: number;
 
 
-  constructor(name: { firstname?: string, lastname: string }, dateOfBirth: any = new Date(), education: string, certificate: string, adress: string, email: string, languageSkills: string, computerSkills: string, description: string, photo: string, visible: boolean, count: number) { // 
+  constructor(name: { firstname?: string, lastname: string }, dateOfBirth: any = new Date(), education: string, certificate: string, adress: string, email: string, languageSkills: string, computerSkills: string, description: string, photo: string, available: boolean, count: number) { // 
     this.name = name;
     this.dateOfBirth = dateOfBirth;
     this.education = education;
@@ -25,7 +25,7 @@ export class student {
       this.computerSkills = computerSkills,
       this.description = description;
     this.photo = "./assets/pics/students/" + photo; // 
-    this.visible = visible;
+    this.available = available;
     this.count = count;
   }
 }

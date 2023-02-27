@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: "directory", component: DirectoryComponent },
   { path: "events", component: EventsComponent },
   { path: "stories", component: StoriesComponent },
+  { path: "students", component: StudentsdetailsComponent },
   { path: "studentsdetails/:studentsID", component: StudentsdetailsComponent },
   { path: "**", redirectTo: "" }
 ];

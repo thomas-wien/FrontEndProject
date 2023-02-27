@@ -1,1 +1,8 @@
-<p>stories works!</p>
+<div *ngFor="let story of stories; index as storyID">
+  <p>{{story.name.firstname}}</p>
+  <p>{{story.name.lastname}}</p>
+  <p>{{story.story}}</p>
+  <p><img src={{story.photo}} alt=""></p>
+  <p><img src={{story.image}} alt=""></p>
+  <p>{{story.visible}}</p>
+</div>

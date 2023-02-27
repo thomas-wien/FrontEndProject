@@ -1,1 +1,10 @@
-<p>carreers works!</p>
+<div *ngFor="let carreer of carreers; index as carreerID">
+  <p>
+    {{carreer.title}}
+    {{carreer.type}}
+    <img src="{{carreer.image}}" alt="" srcset="">
+    {{carreer.content}}
+    {{carreer.info}}
+    {{carreer.active}}
+  </p>
+</div>

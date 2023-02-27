@@ -18,6 +18,6 @@ export class story {
   }
 }
 
-export let storries = [
+export let stories = [
   new story({ firstname: "Thomas", lastname: "Netusil" }, "After my fist Job Interview and my Letter of recomendation from CodeFactory I got the Job as a Senior FullStack WebDeveloper", "Snoopy_Peanuts.png", "thomasN.jpg", true, 0),
 ];

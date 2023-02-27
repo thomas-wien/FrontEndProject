@@ -1,8 +1,8 @@
 export interface ICarreer {
-  carreerTitle: string;
-  carreerType: string; // Article, Job, Course, Video //
-  carreerImage: string;
-  carreerContent: string;
-  carreerInfo: string;
-  carreerActive: boolean;
+  title: string;
+  type: string; // Article, Job, Course, Video //
+  image: string;
+  content: string;
+  info: string;
+  active: boolean;
 }
