@@ -1,0 +1,13 @@
+Crimson: #821918
+
+Dark gray: #363537
+
+White: #ffffff
+
+OffWhite: #eeeeee
+
+Black: #000000
+
+Light gray: #dedede
+
+Red: #950a0a
