@@ -22,9 +22,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  .card:hover .card-img-container {
+    height: inherit;
+  }
   
   .card-text-container {
-    max-height: 6em;
+    max-height: 13em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
