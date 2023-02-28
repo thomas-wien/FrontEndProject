@@ -1,13 +1,15 @@
-$nav-bg-color: #ffffff;
+$nav-bg-color: rgba(255, 255, 255, 0.3);
 $nav-text-color: #821918;
-$nav-text-hover-color: #8b8b8b;
+$nav-text-hover-color: white;
 $body-bg-color: #eeeeee;
 $h1-color: #ffffff;
 $text-color: #363537;
 
 nav {
-  background-color: $nav-bg-color !important;
-  color: $nav-text-color !important;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.1));
+  color: $nav-text-color;
+  text-shadow: 2px 2px 10px black;
+
 
   a:hover {
     color: $nav-text-hover-color !important;
