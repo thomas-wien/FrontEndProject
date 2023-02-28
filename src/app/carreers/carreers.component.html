@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
-    <div *ngFor="let carreer of carreers; index as carreerID" class="col-md-12">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div *ngFor="let carreer of carreers; index as carreerID">
       <div class="card h-100">
         <div class="card-img-container">
           <img class="card-img-top img-fluid" src="{{carreer.image}}" alt="">
@@ -8,7 +8,7 @@
         <div class="card-body">
           <h5 class="card-title text-center">{{carreer.title}}</h5>
           <div class="card-text-container">
-            <p class="card-text">{{carreer.content}}</p>
+            <p class="card-text">{{carreer.content.substring(0,90)}}...more</p>
             <p class="card-text">{{carreer.type}}</p>
             <p class="card-text">{{carreer.info}}</p>
             <p class="card-text">{{carreer.active}}</p>
