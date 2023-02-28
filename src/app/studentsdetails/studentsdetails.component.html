@@ -1,4 +1,4 @@
-<div *ngFor="let student of students; index as studentID">
+<!-- <div *ngFor="let student of students; index as studentID">
   <p>{{student.name.firstname}}</p>
   <p>{{student.name.lastname}}</p>
   <p>{{student.dateOfBirth}}</p>
@@ -11,4 +11,29 @@
   <p>{{student.computerSkills}}</p>
   <p><img src={{student.photo}} alt=""></p>
   <p>{{student.available}}</p>
+</div> -->
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div *ngFor="let student of students; index as studentID">
+      <div class="card h-100">
+        <div class="card-img-container">
+          <img class="card-img-top img-fluid" src="{{student.photo}}" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">{{student.name.firstname}} {{student.name.lastname}}</h5>
+          <div class="card-text-container">
+            <p class="card-text">{{student.description.substring(0,90)}}...more</p>
+            <p class="card-text">{{student.photo}}</p>
+            <p class="card-text">{{student.available}}</p>
+          </div>
+          <div class="card-text-full">
+            <p class="card-text">{{student.description}}</p>
+            <p class="card-text">{{student.photo}}</p>
+            <p class="card-text">{{student.available}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
