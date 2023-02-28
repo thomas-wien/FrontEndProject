@@ -1,7 +1,14 @@
 .card {
     transition: all 0.3s ease-in-out;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    color: #ddd;
   }
   
+  h5 {
+    color: #950a0a;
+    font-weight: bold;
+    text-shadow: 2px 2px 7px white, -1px -1px 1px white;
+  }
   .card:hover {
     transform: scale(1.2);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
