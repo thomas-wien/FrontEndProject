@@ -16,15 +16,18 @@
         <div class="card-body">
           <h5 class="card-title text-center">{{event.name}}</h5>
           <div class="card-text-container">
-            <p class="card-text">{{event.dateTime}}</p>
+
             <p class="card-text">{{event.description.substring(0,90)}}...more</p>
-            <p class="card-text" *ngIf="event.price">{{event.price | currency: '€ '}}</p>
+            <p class="card-text" *ngIf="event.price>0">{{event.price | currency: '€ '}}</p>
+            <p class="card-text" *ngIf="event.price==0">Free Entrance</p>
 
 
           </div>
           <div class="card-text-full">
+            <p class="card-text">{{event.dateTime}}</p>
             <p class="card-text">{{event.description}}</p>
             <p class="card-text" *ngIf="event.price">{{event.price | currency: '€ '}}</p>
+            <p class="card-text" *ngIf="event.price==0">Free Entrance</p>
 
           </div>
         </div>
