@@ -61,14 +61,14 @@ export let carreers = [
   true),
   new carreer("UX/UI Designer - Learn Design Thinking",
   "Course",
-  "design_thinking.jpg",
+  "ux-ui.avif",
   "Are you interested in design and want to learn more about user experience (UX) and user interface (UI) design? Join our UX/UI Designer course and learn about design thinking, wireframing, prototyping, and more. You'll be able to create beautiful and functional designs that will impress your friends and colleagues. Plus, you'll get to work on real-world projects and build a portfolio that will help you land your dream job.",
   "https://codefactory.wien/de/ux-ui-designer-de/",
   true),
   new carreer(
     "Data Analyst",
     "Job",
-    "data-analyst.jpg",
+    "data-analyst.avif",
     "Are you a data-driven problem solver? We are looking for a skilled Data Analyst to join our team and help us make data-driven decisions. You will be responsible for analyzing large amounts of data, identifying trends, and presenting insights to key stakeholders. If you have strong analytical skills and enjoy working with data, apply now!",
     "https://www.linkedin.com/jobs/view/data-analyst-at-xyz-company-2735482992/",
     true
@@ -77,7 +77,7 @@ export let carreers = [
   new carreer(
     "UX/UI Designer",
     "Job",
-    "ux-ui-designer.jpg",
+    "ux-design.avif",
     "Are you a creative thinker with a passion for design? We are seeking a talented UX/UI Designer to join our team and help us create beautiful and user-friendly interfaces. You will be responsible for designing wireframes, prototypes, and user interfaces for web and mobile applications. If you have experience with design tools like Sketch, Figma, and Adobe Creative Suite, apply now!",
     "https://www.linkedin.com/jobs/view/ux-ui-designer-at-abc-company-2735481292/",
     true
@@ -86,7 +86,7 @@ export let carreers = [
   new carreer(
     "Cybersecurity Engineer",
     "Job",
-    "cybersecurity.jpg",
+    "cybersecurity.avif",
     "Are you passionate about cybersecurity? We are looking for a skilled Cybersecurity Engineer to join our team and help us protect our systems and data. You will be responsible for developing and implementing security measures to protect against cyber attacks, monitoring network traffic, and conducting security assessments. If you have experience with cybersecurity tools and techniques, apply now!",
     "https://www.linkedin.com/jobs/view/cybersecurity-engineer-at-xyz-company-2735483992/",
     true

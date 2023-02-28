@@ -9,7 +9,7 @@ import { StudentsdetailsComponent } from './studentsdetails/studentsdetails.comp
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "carrers", component: CarreersComponent },
+  { path: "careers", component: CarreersComponent },
   { path: "directory", component: DirectoryComponent },
   { path: "events", component: EventsComponent },
   { path: "stories", component: StoriesComponent },
