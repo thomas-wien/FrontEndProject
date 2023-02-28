@@ -10,9 +10,10 @@ body {
   color: #ddd;
 }
 
-h5 {
+.red-title {
   color: #950a0a;
   font-weight: bold;
+  font-size: 1.2em;
   text-shadow: 2px 2px 7px white, -1px -1px 1px white;
 }
 
