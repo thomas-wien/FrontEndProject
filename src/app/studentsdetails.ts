@@ -32,5 +32,6 @@ export class student {
 
 export let students = [
   new student({ firstname: "Thomas", lastname: "Netusil" }, "30.04.1967", "Volkschule", "FullStack WebDev", "Schloß Schönbrunn", "FullStackWebDev.at@gmail.com", "de, en, es", "ECDL Advanced", "the guy with the black Face Mask", "Snoopy_Peanuts.png", true, 0),
+  new student({ firstname: "Marko", lastname: "Schoretits" }, "18.02.1974", "Magisterium Rechtswissenschaften Uni Wien", "FullStack WebDev", "Leopoldau City", "marko@schoretits.com", "hr, de, es, en, fr, it, pl", "1st level support", "\"... let me tell you a story ...\"", "AKO500.png", true, 0),
   new student({ firstname: "Aleksandar", lastname: "Stefanovski" }, "12.08.1985", "Hochschule", "FullStack Developer", "Straßgschwandtnerstraße", "addastefanovski@gmail.com", "en, de, mk, srb, bg, hr,es", "ECDL Advanced", "The guy with Kilimanjaro Backpack", "imgme.png", true, 0),
 ];
