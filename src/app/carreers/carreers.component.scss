@@ -1,0 +1,33 @@
+.card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-container {
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .card-text-container {
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+  }
+  
+  .card-text-full {
+    display: none;
+  }
+  
+  .card:hover .card-text-container {
+    display: none;
+  }
+  
+  .card:hover .card-text-full {
+    display: block;
+  }
+  
