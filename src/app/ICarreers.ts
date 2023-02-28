@@ -1,8 +1,8 @@
 export interface ICarreer {
-  name: string;
-  description: string;
+  title: string;
+  type: string; // Article, Job, Course, Video //
   image: string;
-  price: number;
-  available: boolean;
-  count: number;
+  content: string;
+  info: string;
+  active: boolean;
 }

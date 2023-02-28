@@ -1,0 +1,15 @@
+$nav-bg-color: #ffffff;
+$nav-text-color: #821918;
+$nav-text-hover-color: #8b8b8b;
+$body-bg-color: #eeeeee;
+$h1-color: #ffffff;
+$text-color: #363537;
+
+nav {
+  background-color: $nav-bg-color !important;
+  color: $nav-text-color !important;
+
+  a:hover {
+    color: $nav-text-hover-color !important;
+  }
+}

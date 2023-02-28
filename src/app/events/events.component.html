@@ -1,1 +1,8 @@
-<p>events works!</p>
+<div *ngFor="let event of events; index as eventID">
+  <p>{{event.name}}</p>
+  <p>{{event.dateTime}}</p>
+  <p>{{event.description}}</p>
+  <p><img src={{event.image}} alt=""></p>
+  <p>{{event.price}}</p>
+  <p>{{event.visible}}</p>
+</div>
