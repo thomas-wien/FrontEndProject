@@ -9,9 +9,9 @@
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
     <div *ngFor="let event of events; index as eventID">
-      <div class="card h-100">
+      <div class="card h-100 p-2">
         <div class="card-img-container">
-          <img class="card-img-top img-fluid" src="{{event.image}}" alt="">
+          <img class="card-img-top img-fluid" src="{{event.image}}" alt="{{event.name}}">
         </div>
         <div class="card-body">
           <p class="card-title red-title text-center">{{event.name}}</p>
@@ -21,7 +21,7 @@
             <p class="card-text" *ngIf="event.price>0">{{event.price | currency: '€ '}}</p>
             <p class="card-text" *ngIf="event.price==0">Free Entrance</p>
 
-
+ 
           </div>
           <div class="card-text-full">
             <p class="card-text">{{event.dateTime}}</p>
