@@ -12,7 +12,7 @@ export class event {
     this.name = name;
     this.dateTime = dateTime;
     this.description = description;
-    this.image = "../../assets/pics/events/" + image; // 
+    this.image = "./assets/pics/events/" + image; // 
     this.price = price;
     this.visible = visible;
     this.count = count;

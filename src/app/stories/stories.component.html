@@ -3,7 +3,8 @@
     <div *ngFor="let story of stories; index as storyID">
       <div class="card h-100 p-2">
         <div class="card-img-container">
-          <img class="card-img-top img-fluid" src="{{story.image}}" alt="{{story.name.firstname}} {{story.name.lastname}}">
+          <img class="card-img-top img-fluid" src="{{story.image}}"
+            alt="{{story.name.firstname}} {{story.name.lastname}}">
         </div>
         <div class="card-body">
           <p class="card-title red-title text-center">{{story.name.firstname}} {{story.name.lastname}}</p>
@@ -19,7 +20,7 @@
   </div>
 </div>
 
-<form class="form-horizontal text-light">
+<form class="container pt-1 form-horizontal text-light">
   <div class="form-group">
     <label class="control-label col-sm-2" for="firstname">First Name:</label>
     <div class="col-sm-10">
@@ -57,4 +58,5 @@
       </div>
     </div>
   </div>
+  <a class="btn btn-outline-light btn-floating m-1" ng-click="ok()">Submit your project</a>
 </form>
