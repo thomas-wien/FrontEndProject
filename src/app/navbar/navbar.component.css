@@ -1,9 +1,17 @@
 nav {
-  background: linear-gradient(90deg, lightgrey, black);
-  color: #821918;
+  background: linear-gradient(90deg, #bbb, black);
+  color: white;
   text-shadow: 2px 2px 10px black;
   opacity: 95%;
 }
+nav a {
+  color: #ddd;
+  font-size: 1.4em;
+}
 nav a:hover {
   color: white !important;
+}
+nav .navbar-toggler,
+nav .navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=navbar.component.css.map */
