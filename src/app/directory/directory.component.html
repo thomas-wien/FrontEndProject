@@ -1,1 +1,35 @@
-<p>directory works!</p>
+<!-- <div *ngFor="let student of students; index as studentID">
+  <p>{{student.name.firstname}}</p>
+  <p>{{student.name.lastname}}</p>
+  <p>{{student.dateOfBirth}}</p>
+  <p>{{student.education}}</p>
+  <p>{{student.certificate}}</p>
+  <p>{{student.description}}</p>
+  <p>{{student.adress}}</p>
+  <p>{{student.email}}</p>
+  <p>{{student.languageSkills}}</p>
+  <p>{{student.computerSkills}}</p>
+  <p><img src={{student.photo}} alt=""></p>
+  <p>{{student.available}}</p>
+</div> -->
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+      <div *ngFor="let student of students; index as studentID">
+        <div class="card h-100 p-5">
+          <div class="card-img-container rounded-circle">
+            <img class="card-img-top img-fluid" src="{{student.photo}}" alt="{{student.name.firstname}} {{student.name.lastname}}">
+          </div>
+          <div class="card-body">
+            <p class="card-title red-title text-center">{{student.name.firstname}} {{student.name.lastname}}</p>
+            <div class="card-text-container">
+              <p class="card-text">{{student.description}}</p>
+            </div>
+            <div class="card-text-full">
+              <p class="card-text">{{student.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
