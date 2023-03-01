@@ -11,11 +11,11 @@ $text-color: #363537;
 
 footer {
     // background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.0));
-    background: linear-gradient(90deg, lightgrey, black);
+    background: linear-gradient(90deg, black, grey);
     color: $nav-text-color;
     text-shadow: 2px 2px 10px black;
     opacity: 95%;
-    height: 80px;
+    min-height: 4rem;
 
 
 
