@@ -10,5 +10,6 @@ export interface IStudent {
   computerSkills: string;
   photo: string;
   available: boolean;
+  linkToProject: string;
   count: number;
 }
