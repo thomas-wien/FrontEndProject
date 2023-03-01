@@ -16,20 +16,29 @@
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
       <div *ngFor="let student of students; index as studentID">
-        <div class="card h-100 p-5">
-          <div class="card-img-container rounded-circle">
-            <img class="card-img-top img-fluid" src="{{student.photo}}" alt="{{student.name.firstname}} {{student.name.lastname}}">
-          </div>
-          <div class="card-body">
-            <p class="card-title red-title text-center">{{student.name.firstname}} {{student.name.lastname}}</p>
-            <div class="card-text-container">
-              <p class="card-text">{{student.description}}</p>
+
+        <a class="cardLink" routerLink="studentdetails/{{ student.count }}">
+          <div class="card h-100 p-5">
+            <div class="card-img-container rounded-circle">
+              <img class="card-img-top img-fluid" src="{{student.photo}}" alt="{{student.name.firstname}} {{student.name.lastname}}">
             </div>
-            <div class="card-text-full">
-              <p class="card-text">{{student.description}}</p>
+            <div class="card-body">
+              <p class="card-title red-title text-center">{{student.name.firstname}} {{student.name.lastname}}</p>
+              <div class="card-text-container">
+                <p class="card-text">{{student.description.substring(0,90)}}<br> &nbsp; ... more</p>
+              </div>
+              <div class="card-text-full">
+                <p class="card-text">{{student.description}}</p>
+                <p class="card-text fw-bold"><span class="fw-light">born on</span> {{student.dateOfBirth}}<br>
+                  <span class="fw-light">graduated from </span>{{student.education}}<br>
+                  <span class="fw-light">certified in </span>{{student.certificate}}</p>
+                <p class="card-text fw-bold"><span class="fw-light">lives at </span>{{student.adress}}<br>{{student.email}}</p>
+                <p class="card-text fw-bold"><span class="fw-light">speaks </span>{{student.languageSkills}}</p>
+                <p class="card-text fw-bold"><span class="fw-light">handles </span>{{student.computerSkills}}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
-  </div>
+  </div> 
