@@ -17,22 +17,13 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4 g-5" *ngFor="let event of upcomingEvents | slice:0:3">
 
-<<<<<<< HEAD
-          <a class="cardLink" routerLink="/events">
-            <div class="card p-2">
-              <img class="card-img-top" src="assets/{{event.image}}" alt="{{event.name}}">
-              <div class="card-body">
-                <h5 class="card-title red-title">{{event.name}}</h5>
-                <p class="card-text">{{event.description}}</p>
-              </div>
-=======
+
         <a class="cardLink" routerLink="/events">
           <div class="card">
             <img class="card-img-top" src="{{event.image}}" alt="{{event.name}}">
             <div class="card-body">
               <h5 class="card-title">{{event.name}}</h5>
               <p class="card-text">{{event.description}}</p>
->>>>>>> d535552fc252178edc0dd4b69141a46023f9cba1
             </div>
           </div>
         </a>
