@@ -9,8 +9,8 @@ import { StudentsdetailsComponent } from './studentsdetails/studentsdetails.comp
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "careers", component: CarreersComponent },
-  { path: "directory", component: DirectoryComponent },
+  { path: "careers", component: CarreersComponent }, // Job Promotions
+  { path: "directory", component: DirectoryComponent }, // Directory of the Alumni
   { path: "events", component: EventsComponent },
   { path: "stories", component: StoriesComponent },
   { path: "students", component: StudentsdetailsComponent },

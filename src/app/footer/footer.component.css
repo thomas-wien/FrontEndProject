@@ -1,3 +1,10 @@
 footer {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(90deg, lightgrey, black);
+  color: #821918;
+  text-shadow: 2px 2px 10px black;
+  opacity: 95%;
+  height: 80px;
+}
+footer a:hover {
+  color: white !important;
 }/*# sourceMappingURL=footer.component.css.map */
