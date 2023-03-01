@@ -2,6 +2,7 @@
 body {
   background-image: url("assets/pics/20230228_091649.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .card {
@@ -25,7 +26,7 @@ body {
 }
 
 .card-img-container {
-  height: 200px; 
+  height: 200px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -33,7 +34,7 @@ body {
 }
 
 .card:hover .card-img-container {
-  height: auto;
+  height: inherit;
 }
 
 .card-text-container {
@@ -64,6 +65,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
   /* Add transition property */
 }/*# sourceMappingURL=styles.css.map */
