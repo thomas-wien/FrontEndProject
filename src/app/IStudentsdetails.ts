@@ -9,6 +9,7 @@ export interface IStudent {
   languageSkills: string;
   computerSkills: string;
   photo: string;
+  projectphoto: string;
   available: boolean;
   linkToProject: string;
   count: number;
