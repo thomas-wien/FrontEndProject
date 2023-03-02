@@ -1,34 +1,36 @@
-<section class=" border border-light rounded m-3">
-  <div class="p-5">
-    <div class="row">
-      <div class="hero">
-        <h1 class="mb-3">Welcome to the CodeFactory Alumni page</h1>
-        <p>Join our community of alumni and stay connected with fellow graduates, mentors, and industry professionals.
-        </p>
-        <a class="btn btn-outline-light btn-floating m-1" routerLink="/stories">Submit your project</a>
+<div class="container">
+  <section class=" border border-0 rounded m-3">
+    <div class="p-5">
+      <div class="row">
+        <div class="hero">
+          <h1 class="mb-3">Welcome to the CodeFactory Alumni page</h1>
+          <p>Join our community of alumni and stay connected with fellow graduates, mentors, and industry professionals.
+          </p>
+          <a class="btn btn-outline-light btn-floating m-1" routerLink="/stories">Submit your project</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="events border border-light rounded m-3">
-  <div class="p-5">
-    <h2 class="mb-5">Upcoming Events</h2>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 g-5" *ngFor="let event of upcomingEvents | slice:0:3">
+  <section class="events border border-0 rounded m-3">
+    <div class="p-5">
+      <h2 class="mb-5">Upcoming Events</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 g-5" 
+        *ngFor="let event of upcomingEvents | slice:0:3">
 
-
-        <a class="cardLink" routerLink="/events">
-          <div class="card">
-            <img class="card-img-top" src="{{event.image}}" alt="{{event.name}}">
-            <div class="card-body">
-              <p class="card-title red-title">{{event.name}}</p>
-              <p class="card-text">{{event.description}}</p>
+          <a class="cardLink" routerLink="/events">
+            <div class="card p-2 border-0">
+              <img class="card-img-top" src="{{event.image}}" alt="{{event.name}}">
+              <div class="card-body">
+                <p class="card-title red-title">{{event.name}}</p>
+                <p class="card-text">{{event.description}}</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
