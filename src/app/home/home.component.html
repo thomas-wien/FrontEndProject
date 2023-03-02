@@ -1,5 +1,5 @@
 <div class="container">
-  <section class=" border border-light rounded m-3">
+  <section class=" border border-0 rounded m-3">
     <div class="p-5">
       <div class="row">
         <div class="hero">
@@ -12,7 +12,7 @@
     </div>
   </section>
 
-  <section class="events border border-light rounded m-3">
+  <section class="events border border-0 rounded m-3">
     <div class="p-5">
       <h2 class="mb-5">Upcoming Events</h2>
       <div class="row">
@@ -20,7 +20,7 @@
         *ngFor="let event of upcomingEvents | slice:0:3">
 
           <a class="cardLink" routerLink="/events">
-            <div class="card p-2">
+            <div class="card p-2 border-0">
               <img class="card-img-top" src="{{event.image}}" alt="{{event.name}}">
               <div class="card-body">
                 <p class="card-title red-title">{{event.name}}</p>
