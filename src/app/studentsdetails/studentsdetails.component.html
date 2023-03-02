@@ -10,7 +10,9 @@
         <p>Project(s) by:<br>{{student.name.firstname}} {{student.name.lastname}}, born {{student.dateOfBirth}}, <br>
             {{student.description}}</p>
 
-        <p><img src={{student.photo}} alt=""></p>
+            <div class="cardImgContainer my-5">
+                <img  class="rounded-circle" src={{student.photo}} alt="">
+            </div>
 
         <p>&#8226; {{student.education}}<br>
             &#8226; {{student.certificate}}</p>
