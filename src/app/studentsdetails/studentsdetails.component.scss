@@ -1,3 +1,18 @@
-div {
-  color: white;
+.myContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container > div {
+  background: linear-gradient(90deg, rgba(127, 127, 127, 0.8), rgba(0, 0, 0, 0.8));
+  color: #eee;
+  text-shadow: 2px 2px 10px black;
+  max-width: 1000px;
+
+  img {
+    width: 100%;
+
+  }
+
+
 }
