@@ -1,11 +1,12 @@
-    <div class="container myContainer">
-        <div class=" border border-0 rounded m-3 p-5">
+<div class="container myContainer">
+    <div class=" border border-0 rounded m-3 p-5">
         <p>
-            <a href="{{student.linkToProject}}">
+            <a href="{{student.linkToProject}}" target="_blank">
                 <img src={{student.projectphoto}} alt="">
             </a>
         </p>
-        <br><hr><br>
+        <br>
+        <hr><br>
         <p>Project(s) by:<br>{{student.name.firstname}} {{student.name.lastname}}, born {{student.dateOfBirth}}, <br>
             {{student.description}}</p>
 
@@ -18,5 +19,5 @@
 
         <p>{{student.adress}}<br>
             {{student.email}}</p>
-        </div>
     </div>
+</div>
