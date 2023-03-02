@@ -17,7 +17,7 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
       <div *ngFor="let student of students; index as studentID">
 
-        <a class="cardLink" routerLink="studentdetails/{{ student.count }}">
+        <a class="cardLink" routerLink="../studentsdetails/{{ student.count }}">
           <div class="card h-100 p-5">
             <div class="card-img-container rounded-circle">
               <img class="card-img-top img-fluid" src="{{student.photo}}" alt="{{student.name.firstname}} {{student.name.lastname}}">
