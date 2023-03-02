@@ -16,7 +16,8 @@
           <div class="card-text-full">
             <p class="card-text">{{carreer.content}}</p>
             <p class="card-text fw-bold">{{carreer.type}}</p>
-            <p class="card-text">{{carreer.info}}</p>
+            <p *ngIf="carreer.info.startsWith('https://')" class="card-text"><a href="{{carreer.info}}" target="_blank"
+                rel="noopener noreferrer">{{carreer.info}}</a></p>
           </div>
         </div>
       </div>
