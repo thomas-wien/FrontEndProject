@@ -17,7 +17,7 @@
           <p class="card-title red-title text-center">{{event.name}}</p>
           <div class="card-text-container">
             <p class="card-text"><small>{{event.dateTime}}</small></p>
-            <p class="card-text">{{event.description.substring(0,90)}}...more</p>
+            <p class="card-text">{{event.description.substring(0,90)}} ...&nbsp;more</p>
             <p class="card-text" *ngIf="event.price>0">{{event.price | currency: '€ '}}</p>
             <p class="card-text" *ngIf="event.price==0">Free Entrance</p>
 
