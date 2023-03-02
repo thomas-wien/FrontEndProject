@@ -1,14 +1,24 @@
-<p>{{student.name.firstname}}</p>
-<p>{{student.name.lastname}}</p>
-<p>{{student.dateOfBirth}}</p>
-<p>{{student.education}}</p>
-<p>{{student.certificate}}</p>
-<p>{{student.description}}</p>
-<p>{{student.adress}}</p>
-<p>{{student.email}}</p>
-<p>{{student.languageSkills}}</p>
-<p>{{student.computerSkills}}</p>
-<p><img src={{student.photo}} alt=""></p>
-<p><img src={{student.projectphoto}} alt=""></p>
-<p>{{student.linkToProject}}</p>
-<p>{{student.available}}</p>
+<div class="hypercontainer">
+    <div class="container">
+        <div class=" border border-0 rounded m-3 p-5">
+        <p>
+            <a href="{{student.linkToProject}}">
+                <img src={{student.projectphoto}} alt="">
+            </a>
+        </p>
+        <br><hr><br>
+        <p>Project(s) by:<br>{{student.name.firstname}} {{student.name.lastname}}, born {{student.dateOfBirth}}, <br>
+            {{student.description}}</p>
+
+        <p><img src={{student.photo}} alt=""></p>
+
+        <p>&#8226; {{student.education}}<br>
+            &#8226; {{student.certificate}}</p>
+        <p>&#8226; speaks {{student.languageSkills}}</p>
+        <p>&#8226; handles {{student.computerSkills}}</p>
+
+        <p>{{student.adress}}<br>
+            {{student.email}}</p>
+        </div>
+    </div>
+</div>
